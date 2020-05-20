@@ -8,7 +8,6 @@ class Home extends StatelessWidget {
     return MaterialApp(
       title: "Quote Book",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
       home: HomePage(),
     );
   }

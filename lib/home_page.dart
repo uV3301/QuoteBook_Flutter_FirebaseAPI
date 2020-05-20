@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     var res = await http.get(url);
     return jsonDecode(res.body)["headers"];
   }
-
+  final color = Colors.teal;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -18,7 +18,31 @@ class HomePage extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             if (snapshot.hasData) {
-              return Offstage();
+              return StatefulBuilder(
+                builder:(context, setState){
+                               return VxSwiper(  
+                  scrollDirection: Axis.vertical,
+                  height: context.screenHeight,
+                  viewportFraction: 1.0,
+                  items: snapshot.data.map<Widget>(
+                    (el)=> VStack(
+                      [
+                        "Quotes".text.xl2.white.makeCentered(),
+                        "${el["quoteText"]}".text.xl2.italic.white.make().box.shadowMd.make(),
+                        IconButton(iconSize: 30,icon: Icon(Icons.share, color: Colors.white,),onPressed: null,),
+                        
+                      ],
+                      crossAlignment: CrossAxisAlignment.center,
+                      alignment: MainAxisAlignment.spaceAround,
+                      )
+                    .animatedBox
+                    .p16
+                    .color(color)
+                    .make()
+                    .h(context.screenHeight)
+                  ).toList()
+                ); }
+              );
             }
             return "Nothing Found".text.makeCentered();
           }
