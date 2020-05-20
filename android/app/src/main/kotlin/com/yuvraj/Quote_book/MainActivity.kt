@@ -1,0 +1,6 @@
+package com.yuvraj.Quote_book
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
