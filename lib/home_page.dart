@@ -5,9 +5,9 @@ import 'package:http/http.dart' as http;
 
 class HomePage extends StatelessWidget {
   fetchData() async {
-    final url = "http://192.168.1.2:3000/api/quotes";
+    final url = "https://api-firebase-try.firebaseapp.com/quotes";
     var res = await http.get(url);
-    return jsonDecode(res.body)["quotes"];
+    return jsonDecode(res.body)["headers"];
   }
 
   @override
