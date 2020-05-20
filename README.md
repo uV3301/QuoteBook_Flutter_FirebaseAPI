@@ -1,11 +1,30 @@
 # Quote_book
 
-A new Flutter project.
+A Flutter made project.
 
 ## Getting Started
+Clone or download the repository to get started with the project.<br>
+Your system should have flutter sdk.<br>
 
-This project is a starting point for a Flutter application.
+## How to
+Run following commands in the terminal in the project directory
+```
+Flutter pub get     //Get dependencies
+```
+```
+Flutter run         //For debugging and stuff
+```
+```
+Flutter build apk 
+Flutter install     //Install app to connected device
+```
 
+
+
+<br>
+Feel free to contribute with ❤
+
+## Get started with Flutter
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
