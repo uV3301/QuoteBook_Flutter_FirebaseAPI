@@ -1,7 +1,7 @@
 # Quote_book
 
 A Flutter made project.</br>
-<img align="right" width="250" height="350" src="https://github.com/uV3301/QuoteBook_Flutter_FirebaseAPI/blob/master/demo/demo-app.gif">
+<img align="right" width="220" height="350" src="https://github.com/uV3301/QuoteBook_Flutter_FirebaseAPI/blob/master/demo/demo-app.gif">
 
 ## Getting Started
 Clone or download the repository to get started with the project.<br>
