@@ -1,7 +1,7 @@
 # Quote_book
 
 A Flutter made project.
-![Flutter demo app](.demo/demo-app.mp4)
+![Flutter demo app](demo/demo-app.mp4)
 
 ## Getting Started
 Clone or download the repository to get started with the project.<br>
